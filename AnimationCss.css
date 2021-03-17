@@ -1,0 +1,153 @@
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+body{
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  padding:30px;
+
+}
+#layer1{
+         
+     height: 95vh;
+     animation: bgmovement;
+     animation-fill-mode: backwards;
+     animation-duration: 2s;
+     clip-path: ellipse( 149vh 59vh at 50% 36% );
+     background:linear-gradient(#fbd3e980 , #bb377d86 ), url(Strawberry-and-Cake-PPT-Backgrounds-Template-ppt-background-images-hd.jpg) ;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: bottom;
+      
+     
+     
+}     
+
+  
+#layer2{
+  width: 100%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#head{
+  color: #FFFFFF;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 35px;
+  animation: movedown;
+  animation-duration: 1.5s;
+  margin-bottom:0%;
+}
+#descrip{
+  margin-top:0%;
+  color: #FFFFFF;
+  animation: moveup;
+  animation-duration: 1.5s;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 17.5px;
+  
+}
+
+#layer1 button{
+  width: 180px;
+  padding: 12px;
+  margin: 20px;
+  border: 2px solid #eee;
+  border-radius: 50px;
+ cursor: pointer;
+  color: #444;
+  animation-name: moveright;
+  animation-duration: 1s;
+  animation-delay: .5s;
+  font-size: 18px;
+  letter-spacing: 1px;
+  animation-fill-mode: backwards;
+  box-shadow:0 0 10px #686767;
+}
+
+#layer1 button:hover{
+  background-image: (linear-gradient(to left, #2d8fe5, #d155b8));
+  transform: scale(1.2);
+  cursor: pointer;
+
+}
+#layer1 button::before,
+#layer1 button::after {
+  transform: translateX(300px) skewX(-25deg);
+  transition: 0.3s;
+}
+
+
+  
+
+
+@keyframes bgmovement{
+  0%{
+    background: linear-gradient( #ffc2e3,  #ffa9d8 50% 50% ) ;
+    background-position: center;
+  }
+
+  100%{
+    background:linear-gradient(#fbd3e980 , #bb377d86 ), url(Strawberry-and-Cake-PPT-Backgrounds-Template-ppt-background-images-hd.jpg) ;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: bottom;
+      
+  }
+}
+
+@keyframes movedown{
+  0% {
+    transform: translateY(-110px);
+    opacity: 0;
+  }
+  50%{
+    transform: translateY(10px);
+    opacity: .6;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+  @keyframes moveup{
+    0% {
+      transform: translateY(120px);
+      opacity: 0;
+    }
+    50%{
+      transform: translateY(-10px);
+      opacity: .5;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
+  @keyframes moveright{
+    0% {
+      transform: translateX(-120px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+
+  

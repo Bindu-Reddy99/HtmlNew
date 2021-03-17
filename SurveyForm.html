@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SurveyForm</title>
+    </head><body>
+        <link rel="stylesheet" href="SurveyCss.css"/>
+    <h1 >Survey Form</h1>
+
+<form  id="form_survey" >
+  
+  <p >Let us know how we can improve freeCodeCamp</p>
+  
+  <label >* Name : </label><input id="name" type='text' placeholder=' Enter your name' required>
+  
+  <label >* Email : </label><input id='email' type='email'
+     placeholder=' Enter your email' required>
+  
+  <label>* Age : </label><input id='age' type='number' placeholder=' age' min="10" max="100" required>
+  
+ 
+  <label for='dropdown'>Which option best describes your current role?</label>
+  <select id='dropdown'>
+    <option value='Student'>Student</option>
+    <option value='Freelancer'>Freelancer</option>
+    <option value='Employer'>Employer</option>
+   
+  </select>
+  
+  <label target>How likely is that you would recommend <br>freecodeCamp to your friend? </label>
+  <div id='cheched_type'>
+    <label for='fdef'><input type='radio' id ='fdef' value='Definitely'>Definitely</label>
+    <label for='fmay'><input type='radio'  id ='fmay' value='Maybe'>Maybe</label>
+    <label for='fnot'><input type='radio'  id ='fnot' value='Not Sure'>Not Sure</label>
+  </div>
+  <label for="flike">What do you like most in FCC?&nbsp;</label>
+		<select  id="dropdown">
+  <option value="Select an option">Select an option</option>
+  <option value="Perks">Perks</option>
+  <option value="Food">Food</option>
+  <option value="Travel">Travel</option>
+  </select>
+  
+  <label target>Things that should be improved in the future<br>(Check all that apply):</label>
+  <div id='cheched_type'>
+    <label for='front'><input type='checkbox'  id ='front' value='Front-end Projects'>Front-end Projects</label>
+     <label for='back'><input type='checkbox' id ='backb' value='Back-end Projects'>Back-end Projects</label>
+     <label for='data'><input type='checkbox' id ='data' value='Data Visualization'>Data Visualization</label>
+    
+  </div>
+  
+  
+     
+</form>
+</body>
+</html>
